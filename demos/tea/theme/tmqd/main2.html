@@ -1,0 +1,288 @@
+﻿<!DOCTYPE HTML>
+<html >
+<head>
+<title>餐饮秀点餐系统</title>
+<link rel="apple-touch-icon" href="icon.png"/>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="touch-event-mode" content="processed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" /> 
+<meta name="apple-mobile-web-app-capable" content="yes" /> 
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+<link href="theme/tmqd/css2.css" rel="stylesheet" type="text/css">
+<link href="csi/css/common.css" rel="stylesheet" type="text/css">
+<link href="csi/css/buttons.css" rel="stylesheet" type="text/css" />
+<script src="csi/scripts/jquery.js"></script>
+<script src="csi/scripts/il.js"></script> 
+<script src="csi/scripts/md5.js"></script> 
+<script src="data/menudatab.js"></script> 
+
+<script>
+    var themepath="tmqd";
+    var myScroll, orderScroll, viewpicScroll, tagScroll = null, ordertextScroll = null, menuScroll = null,menuScrolla = null;menuScrollb = null,tableScroll=null;
+    var employnum = "", tableid = "";
+
+    //var picWidth=710;//此处跟CSS中的宽度大小一至，请注意
+    var orderlista = []; //
+    var orderlistb = []; //
+    var orderlistc = [];
+     var orderlistd = [];
+
+
+</script>
+<script src="csi/scripts/common.js"></script> 
+<style>
+</style>
+</head>
+
+<body class="body_main" id="main2" scripttype="init3"> 
+
+
+
+<div id="listdiv" class="listdiv">
+            <div class="piclist">
+               
+            
+            </div>
+        </div>
+    
+
+<div class="contentbody" >
+    	<div class="menubar">
+        		<div id="qd_btn" class="qd_menu_1"></div>
+        </div>
+        
+        <div id="topmenulist" class="topmenulist">
+        		
+        		<div class="topshadow"></div>
+        		<div class="botshadow"></div>
+
+
+                <div class="menubottom   flip-card-two" id="menuscroll">
+
+                         <div class="facelist-two" id="facelist-two">
+                	                <div class="menuscrollbox " id="menuscrolla">
+                    		
+                                    </div>
+                         </div>
+
+                        <div class="backlist-two" id="backlist-two">
+                                <div class="menuscrollbox" id="menuscrollb">
+                    		            
+                                </div>
+                        </div>
+
+                    
+                </div>
+
+
+        </div>
+        
+        
+    	<div class="bottommenu" >
+        	<div id="backtopmenu" class="backtopmenu backtopmenudef">
+               <span>返回主分类</span>
+            </div>
+        	
+        	<div class="goback">
+            	<span id="backtomain" class="backtomain">返回管理界面</span>
+                <span onClick="location.reload()" style="display:noneD;float:left;border:0px solid #ccc;width:60px;height:20px;margin-top:10px"></span>
+                <span class="search">
+                	<input type="text" id="searchs" />
+                </span>
+            </div>
+        	
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+<textarea id="loginformtemplate" style='display:none'>
+  	<div class="loginform" id="loginform">
+    		<div class="loginboard" id="logincont">
+            		<div id="loginboard">
+            		<div class="logintitle">请服务员登录确认</div>
+            		<div class="loginname"><input type="number" id="logname" value="" name="logname" /></div>
+                    <div class="loginpass"><input type="password" id="logpass" value="" name="logpass" /></div>
+                    <div class="loginsub" id="loginsub">确 认</div>
+                    <div class="logincancel" id="logincancel">取消</div>
+                    </div>
+            
+            </div>
+    </div>
+</textarea>
+<textarea id="loginformtableselecttemplate" style='display:none'>
+    		<div class="tableselect" id="tableselect">
+            		<div class="logintitle">请选择客户桌号  <select id="tabletypea"></select><select id="tabletypeb"></select></div>
+            		<div class="selectdrop" >
+								<div class="clickperson">
+								 就餐人数：<input type="number"  id="pernum" value="2">
+									<span class="button green pernum">1</span>
+									<span class="button green pernum">2</span>
+									<span class="button green pernum">3</span>
+									<span class="button green pernum">4</span>
+									<span class="button green pernum">5</span>
+									<span class="button green pernum">6</span>
+									<span class="button green pernum">7</span>
+									<span class="button green pernum">8</span>
+									<span class="button green pernum">9</span> <select id="pernumselect" class='button green'></select>
+								 </div>
+								<div id="tablelistscroll" class="tablelistscroll">
+									<div id="tablelist" class='tablelist'>
+
+									</div>
+								</div>
+                           <br>
+                    </div>
+                    <div class="loginsub" id="selectsub">确 认</div>
+                    <div class="logincancel" id="selectcancel">取消</div>
+                    <div class="datasaveajaxmsg" id="datasaveajaxmsg"></div>
+            </div>
+</textarea>
+    
+    
+    
+    
+<textarea id="orderboxtemplate" style='display:none'>
+<div class="orderbox" data="{proid}">
+        <div class="box"><img class="photo" src="{pictype1}"></div>
+        <div class="box fixbox"><span>{title}</span><p>{bakinfo}</p></div>
+        <div class="box aci">
+           <i>{unit2}</i> <div class="addcutbg"><div class="cut"></div><div class="number">{number}</div><div class="add"></div></div>
+        
+        </div>
+        <div class="box proprice">{proprice}/{unit}</div>
+        <div class="box"><div class="delorderform" ></div></div>
+
+</div>
+ </textarea>
+ <textarea id="ordertextboxtemplate" style='display:none'>
+    <div class="orderbox" >
+            <div class="box idx">{idx}.</div>
+             <div class="box protype">{protype}</div>
+            <div class="box fixbox left"><b>{title}</b><p>{bakinfo}</p></div>
+            <div class="box num">{number}{unit2}</div>
+            <div class="box price">{proprice}/{unit}</div>
+           
+    </div>
+ </textarea>
+ 
+ <!--点菜清单模板-->
+ <textarea id="orderformtemplate" style='display:none'>
+	<div id="orderform" class="orderform" >
+    	<div id="ordersubmit" class="ordersubmit subbg1"><span>点菜完毕</span></div>
+        <div id="ordergoon" class="ordergoon goonbg1"><span>继续点菜</span></div>
+         <div class="orderboard">
+         	 <div class="ordertitle">
+                    <div class="orderbutton">
+                    		<div id="orderbt1" class="orderbt1 orderbt1_2"><span></span>按图片列表</div>
+                            <div id="orderbt2" class="orderbt2 orderbt2_1"><span></span>按文字列表</div>
+                    </div>
+                    <span></span>
+             </div>
+			<div id="flip-card" class="flip-card"> 
+					<div id="face_piclist" class="facelist"  >
+						 <div class="listtitle" >
+							<div>图片</div>
+							<div class="fix">菜名</div>
+							<div>份数</div>
+							<div>单价</div>
+							<div>删除</div>
+						 </div>
+						 
+						 <div id="orderformlist" class="orderformlist" >
+							  <div class="tryboxlist"  id="tryboxlist">   
+							 </div>   
+						 </div>
+					 </div>
+					 <div id="back_textlist" class="backlist"  >
+						 <div class="listtitle" >
+							<div class="idx">序号</div>
+                            <div>分类</div>
+							<div class="fix">菜名</div>
+                            <div >份数</div>
+							<div>单价</div>
+						 </div>
+						 <div id="ordertextlist"  class="ordertextlist">
+							   <div class="textlist"  id="textlist"> 
+							 </div>
+						 </div>
+						
+					 </div>
+             </div>
+         
+         </div>
+    </div>
+ </textarea>    
+<!--点菜清单模板end-->  
+ 
+ <!--菜式详情-->
+ <textarea id="abouttemplate" style="display:none">
+  <div class="previewform" id="previewform">
+    	<div id="viewclose" class="viewclose"><div class="closebtn"></div></div>
+        <div class="viewboard" >
+        	<div class="viewtitle" id="viewtitle" >菜品名</div>
+            <div class="viewintro" id="viewintro"><p></p></div>
+        	<div class="viewbigpic" id="viewbigpic">
+            	<div id="bigpicscroll" class="bigpicscroll"></div>
+            </div>
+            <div class="viewright">
+            	<div class="prices" ><span id="priceinfo">85</span><span class="unit">/</span><span id="unit" class="unit"></span></div>
+                <div class="selectbox" id="selectbox">
+                	<h1>请选择份量:</h1>
+                    <h2><select class="selectbg1" id="selectnum">
+                    		
+                    </select></h2>
+                    <h1>请选择您的口味:</h1>
+                     <h3><select class="selectbg1" id="bakinfo">
+                     <option value="">-可多选-</option>
+                     <option value="input">输入备注</option>
+                     </select></h3>
+                    <h4 id="setbakinfo"><div class="clearfix"></div></h4>
+                </div>
+            	<div id="addandedit" class="addandedit">
+                	<div id="addtomenu"  class="menustat1">加入清单</div>
+                    <div id="edittomenu"  class="menustat1">确认修改</div>
+                </div>
+            </div>
+            <div class="scrolldot" id="scrolldot">
+            	
+            </div>
+            
+        </div>
+    </div>
+ </textarea>
+ <!--菜试详情end-->
+ 
+ 
+ <!--分类标签-->
+ <textarea id="papertemplate" style="display:none">
+ 
+  <div class="paperboard" id="paperboard">
+   		<div class="papertop" id="papertop">
+        	<div id="cy_type" class="current">菜肴分类</div>
+            <div id="cy_tag">菜肴标签</div>
+        </div>
+        <div  id="paperback" class="paperback">
+        		<div id="tagscroll" class="tagscroll">
+                    <ul id="taglist" class="taglist clearfix">
+                        
+                    </ul>
+                    
+                </div>
+                <div id="paperclose" class="paperclose"></div>
+        </div>
+   
+   </div>
+ 
+ </textarea>
+  <!--分类标签-->
+
+</body>
+</html>
+

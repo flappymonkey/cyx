@@ -1,0 +1,305 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,div,ul,li,image,a{
+	margin:0px;
+	padding:0px;	
+	border:0px;
+}
+
+/*header*/
+#header_wrapper{
+	background:url(../images/header_back.jpg) repeat-x;
+	height:66px;
+}
+#header{
+	position:relative;
+	margin:auto;
+	width:910px;
+	height:66px;
+}
+#logo{
+	float: left;
+}
+#navigate{
+	float:right;
+	height:37px;
+	margin-top:15px;
+}
+#navigate ul{
+	list_type:none;
+}
+#navigate ul li
+{
+	display:inline;
+}
+
+#navigate ul li a{
+	float:left;
+	display:block;
+	height:28px;
+	width:70px;
+	margin-left:10px;
+	padding:12px 0px 0px 0px;
+	text-align:center;
+	font-size:13px;
+	font-weight:bold;
+	text-decoration:none;
+	color:#ffffff;
+	outline:none;	
+}
+
+#navigate li a:hover{
+	color:#f1a123;
+}
+
+#navigate li a.current{
+	color:yellow;
+}
+/*end of header*/
+
+/*content*/
+#content_wrapper{
+	background-color:#d7ba74;
+	height:400px;
+}
+
+#download_wrapper{
+	background-color:#d7ba74;
+	height:360px;
+}
+
+/*end of content*/
+
+/*widget*/
+#widget_wrapper{
+	background-color:#ffffff;
+}
+/*end of widget*/
+
+
+#join_image{
+	width:958px;
+	height:400px;
+	background-image:url(../images/b.png);	
+}
+#join_btn{
+	position:relative;
+	left:500px;
+	top:250px;	
+}
+
+/*footer*/
+#footer{
+	height:30px;
+	width:100%;
+	background-color:#f5f5f5;
+	padding-top:10px;
+	text-align:center;
+}
+/*end of footer*/
+
+a.download{
+	text-indent: -99999px; width: 160px; display: block; background: url(../images/download2.png) no-repeat; height: 44px
+}
+
+a.download:hover{
+	text-indent: -99999px; width: 160px; display: block; background: url(../images/download1.png) no-repeat; height: 44px
+}
+a.buy:link {
+	
+}
+
+.theme{
+	float:left;
+	margin:10px;	
+}
+
+.theme div{
+	text-align:center;
+	color:#434343;
+	margin:10px 5px 10px 5px;	
+	font-size:24px;
+	font-weight:bold;
+}
+
+.theme img{
+	border:solid 3px #ffffff;
+}
+.theme a:hover img{
+	border:solid 3px yellow
+}
+
+#themeheader{
+	text-align:center;
+	font-size:24px;
+	color:#434343;
+	margin-top:10px;
+	border:solid 1px #666;
+	background-color::#ffffff;
+}
+
+#demoContent{
+	width:960px;
+	height:400px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color::#ffffff;
+	padding-top:10px;
+}
+
+#demoContent h1{
+	font-size:25px;	
+	padding:20px 0px 10px 10px;
+}
+
+#content_1 h1{
+	font-size:25px;	
+	padding:10px 0px 20px 10px;
+}
+
+.content{
+	width:960px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.content h1{
+	font-size:25px;	
+	padding:25px 0px 0px 10px;
+	height:25px;
+}
+#procedure{
+	margin-bottom:30px;
+	background-color:#ffffff;
+}
+
+#join{
+	background-image:url(../images/bannerBg11.jpg);
+	background-repeat-x: repeat;
+	width: 100%;
+	height: 384px;	
+}
+
+
+.tips{
+	margin-right:5px;	
+}
+
+.content2{
+	width:960px;
+	height:450px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:20px;	
+}
+
+.title{
+	color:#B91313;	
+	font-size:18px;
+	font-weight:bold;
+	font-family:Verdana, Geneva, sans-serif;
+	margin-top:10px;
+	margin-bottom:5px;
+}
+
+.white{
+	background-color:#ffffff;	
+}
+
+
+#aboutme{
+	width: 100%;
+	height: 176px;
+	background-color:#ffffff;		
+}
+
+#banner10{
+	width:996px;
+	height:176px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+/**关于我们**/
+.main_2{
+	padding-bottom: 40px;
+	padding-top: 20px;
+	width: 996px;
+	height: 100%;
+	margin: 0 auto;
+	background: url(../images/main_bg.jpg) repeat-y;
+}
+
+.main_left{
+	width: 203px;
+	margin-left: 20px;
+	_margin-left: 10px;
+	margin-right: 17px;
+	_margin-right: 7px;
+	float: left;
+	padding-bottom: 30px;
+}
+
+.main_right{
+	width:700px;
+	float:left;	
+	padding-left:20px;
+	height:400px;
+}
+
+
+.son_menu li {
+	color: #333;
+	font-size: 12px;
+	line-height: 34px;
+	text-indent: 10px;
+	border-top:dotted 1px;
+}
+
+.son_menu li a {
+	color: #333;
+	display: block;
+	text-decoration: none;
+	background: url(../images/ico6.jpg) right center no-repeat;
+}
+
+.son_menu li a:hover{ color:#FFF;  background: url(../images/ico6_2.jpg) right center no-repeat #D40000;}
+
+.son_menu li a.select{ color:#FFF;  background: url(../images/ico6_2.jpg) right center no-repeat #D40000;}
+
+.title_2 {
+	background: url(../images/tit_2.jpg) no-repeat;
+	height: 33px;
+	width: 720px;
+	font-size: 16px;
+	color: #111;
+	font-weight: bold;
+	text-indent: 25px;
+	line-height: 28px;
+}
+
+.main_con {
+margin-top: 22px;
+line-height: 25px;
+}
+.gray2 {
+font-size: 14px;
+color: #555;
+font-weight: bold;
+}
+.gray3 {
+	font-size: 16px;
+	color: #555;
+	font-weight: bold;
+}
+.red3 {
+	font-size: 24px;
+	color: #D70000;
+	font-weight: bold;
+}
+.red4 {
+font-size: 12px;
+color: #D70000;
+}
+/**--end of 关于我们 --**/

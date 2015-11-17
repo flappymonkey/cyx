@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>茶室版本</title>
+    <style type="text/css">
+        body,html{
+            height: 100%;
+        }
+
+        body {
+          background-color: #333;
+        }
+
+        #wrapper {
+          width: 1144px;
+          height: 100%;
+          line-height: 100%;
+          margin-left:  auto;
+          margin-right: auto;
+        }
+
+        /* iPad */
+        .ipad-front {
+          position: relative;
+          width: 1024px;
+          height: 768px;
+          background-color: #000;  
+          border-radius: 10px;
+          border: 2px solid #888;
+          padding: 60px;
+          box-shadow: 1px 2px 0px #111;
+        }
+
+        .ipad-front-camera {
+          width: 16px;
+          height: 16px;
+          background-color: #222;
+          border-radius: 50px;
+          position: absolute;
+          top: 436px;
+          left: 22px;
+        }
+
+        .ipad-front-camera span {
+          display: block;
+          width: 4px;
+          height: 4px;
+          background-color: #111;
+          border-radius: 50px;
+          position: absolute;
+          top: 6px;
+          left: 6px;
+        }
+
+        .ipad-front-display {
+          width: 100%;
+          height: 100%;
+          background-color: #111;
+        }
+        .ipad-front-display iframe{
+            border: 1px solid #333;
+        }
+
+        .ipad-front-home-button {
+          width: 40px;
+          height: 40px;
+          background-color: #000;
+          border:1px solid #111;
+          border-radius: 50px;
+          position: absolute;
+          right: 8px;
+          top: 424px;
+          box-shadow: 1px 1px 2px #666;
+        }
+
+        .ipad-front-home-button span {
+          width: 12px;
+          height: 12px;
+          position: absolute;
+          top: 14px;
+          left: 14px;
+          background-color: #000;
+          border:1px solid #444;
+          border-radius: 2px;
+        }
+        /* /iPad */
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+      
+      <!-- iPad -->
+      <div class="ipad-front">
+        <div class="ipad-front-camera"><span></span></div>
+        <div class="ipad-front-display">
+            <iframe width="1024" height="768" src="demos/tea/i.html"></iframe>
+        </div>
+        <div class="ipad-front-home-button"><span></span></div>
+      </div>
+      <!-- /iPad -->
+      
+    </div>
+</body>
+</html>

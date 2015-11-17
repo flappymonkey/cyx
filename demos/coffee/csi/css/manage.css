@@ -1,0 +1,379 @@
+body,html{background:#000;font-size:12px;font-family: "Arial"; padding:0;margin:0;width:100%;height:100%;border:0px;font-family:"Microsoft YaHei"}
+body,div,table,td,li,h1,h2,h3,h4{font-size:12px;color:#404040;margin:0px;text-align:left;}
+
+body{background: left -80px repeat-x}
+*{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-touch-callout:none;-webkit-user-select:none;font-family:"Microsoft YaHei"}
+/* CSS Document */
+
+
+/*clear both*/
+.clearfix {  
+	display: inline-block; 
+	clear:both; 
+}  
+.clearfix:after {  
+	/*/*/content: "."; /* ie8 */  
+	display: block;  
+	height: 0;  
+	clear: both;  
+	visibility: hidden;  
+}  
+/* Hides from IE-mac \*/  
+* html .clearfix {  
+	height: 1%;  
+}  
+.clearfix {  
+	display: block;  
+}  
+
+img{border:0px;}
+ul{ list-style-type:none;margin:0px;padding:0px;}
+iframe{border:0px;}
+
+button,input,textarea{vertical-align:middle;}
+
+form{margin:0px;padding:0px;}
+
+
+
+
+
+
+
+@-webkit-keyframes moveinani {
+	0% {-webkit-transform: translateX(-100%); }
+	100% { -webkit-transform:   translateX(0%);}
+}
+@-webkit-keyframes moveoutani {
+	0% {-webkit-transform: translateX(0%); }
+	100% { -webkit-transform:   translateX(100%);}
+}
+@-webkit-keyframes scaleinani {
+	0% { -webkit-transform: scale(0.01) }
+	60% { -webkit-transform: scale(1.05) }
+	80% { -webkit-transform: scale(0.95) }
+	100% { -webkit-transform: scale(1.00) }
+}
+@-webkit-keyframes scaleoutani {
+	0% { -webkit-transform: scale(1) }
+	60% { -webkit-transform: scale(0.95) }
+	80% { -webkit-transform: scale(1.2) }
+	100% { -webkit-transform: scale(0.5) }
+}
+
+
+
+.body_manage{background:url(../images/body_manage.jpg) left top;}
+
+.bodycont{width:1024px;height:745px;overflow:hidden;}
+.menuleft{float:left;height:742px;width:90px;overflow:hidden;}
+
+	.menuleft .menu{
+		clear:both;
+	}
+	.menuleft .menu div{
+		height:50px;clear:both;padding:80px 0 0 5px;font-size:15px;color:#fff;width:67px;border-bottom:1px solid #39536E;border-top:1px solid #141E2A;
+		-webkit-text-shadow: 2px 1px  0px RGB(57,84,111);	text-shadow: 2px 1px  0px RGB(57,84,111);
+	}
+	@-webkit-keyframes fontscale {
+	 0% {-webkit-transform:scale(0.7);}
+	50% { -webkit-transform: scale(1.2); }
+	100% { -webkit-transform: scale(0.7); }
+	}
+	
+	.menuleft .current{	background:url(../images/managebg.png) left top no-repeat;}
+	
+	.menuleft .current span{display:block;-webkit-animation:fontscale 1.5s ease infinite}
+	
+	.menutouchstart{-webkit-transform:scale(0.5) 0.5s ease}
+	.menuleft .menu1{background:url(../images/manage.png) 0px 25px no-repeat ; -webkit-animation:scaleinani 0.5s ease}
+	.menuleft .menu2{background:url(../images/manage.png) 0px -90px no-repeat ;-webkit-animation:scaleinani 0.5s ease}
+	.menuleft .menu3{background:url(../images/manage.png) 0px -210px no-repeat ;-webkit-animation:scaleinani 0.5s ease}
+
+
+
+
+.contmovein{-webkit-animation:moveinani 0.5s ease}
+.contmoveout{-webkit-animation:moveoutani 0.5s ease}
+
+
+.contright{float:left;height:742px;width:934px;border:0px solid rgba(0,0,0,0.1);overflow:hidden;position:relative}
+
+	.manageindex{	position:absolute;border:1px dotted rgba(255,255,255,0.1);margin-top:5px;width:99%;height:99%}
+	.manageindex .l1{background:url(../images/lr.png) left top no-repeat;width:153px;height:153px;
+	position:absolute;left:0px;top:0px;}
+	.manageindex .l2{background:url(../images/lr.png) left top no-repeat;width:153px;height:153px;
+	position:absolute;right:0px;top:0px;-webkit-transform:rotate(90deg);}
+	.manageindex .l3{background:url(../images/lr.png) left top no-repeat;width:153px;height:153px;
+	position:absolute;right:0px;bottom:0px;-webkit-transform:rotate(180deg);}
+	.manageindex .l4{background:url(../images/lr.png) left bottom no-repeat;width:153px;height:153px;
+	position:absolute;left:0px;bottom:0px;-webkit-transform:rotate(270deg);}
+	.manageindex .icon{background:url(../images/cyx.gif) left top no-repeat;width:302px;height:53px;
+	position:absolute;bottom:30px;left:320px;border:1px solid #ccc;}
+	
+	.manageindex .gomenubg{background:url(../images/dc.png) right center no-repeat;width:600px;height:400px;margin:50px 0 0 200px;padding:150px 0 0 0;}
+	.manageindex .goinclick{
+		font-size:30px;text-align:center;padding:10px;width:300px;
+		border-radius:30px;
+		text-shadow: 2px 1px  0px RGB(255,255,255)
+		}
+		.manageindex .goinclicka{
+			-webkit-box-shadow:5px 5px 7px #000;
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(226,226,226,1)), color-stop(50%,rgba(219,219,219,1)), color-stop(51%,rgba(209,209,209,1)), color-stop(100%,rgba(254,254,254,1)));
+		}
+		.manageindex .goinclickb{
+			-webkit-box-shadow:3px 3px 3px #000;
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(224,243,250,1)), color-stop(50%,rgba(216,240,252,1)), color-stop(51%,rgba(184,226,246,1)), color-stop(100%,rgba(182,223,253,1)));
+		}
+
+
+
+/*菜肴管理界面*/
+
+.managecy{position:absolute;border:0px solid red;width:99%;height:99%}
+
+		.managecy .topmenu{margin:0 50px;height:45px;border:1px solid rgba(57,75,95,0.5);border-radius: 0px 0px 25px 25px;padding:5px;overflow:hidden;
+		position:relative;
+		-webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.7);
+		-moz-box-shadow:  0px 0px 4px rgba(0,0,0,0.7);
+		box-shadow:  0px 0px 4px rgba(0,0,0,0.7);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,0.5)), color-stop(100%,rgba(125,185,232,0))); /* Chrome,Safari4+ */
+		}
+		.managecy .topmenu .menuoverflow{height:50px;overflow:hidden;position:relative;border-radius: 0px 0px 25px 25px;}
+		.managecy .topmenu .mngmenulist{position:absolute;}
+		
+		.managecy .topmenu .mngmenulist div{
+			float:left;width:150px;padding:5px;font-size:14px;border-right:1px solid #ccc;text-align:center;font-size:20px;color:#fff;margin:0 5px;border:1px solid RGB(186,147,84);color:#000;border-radius: 15px;
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(243,226,199,1)), color-stop(50%,rgba(193,158,103,1)), color-stop(51%,rgba(182,141,76,1)), color-stop(100%,rgba(233,212,179,1))); /* Chrome,Safari4+ */
+		-webkit-text-shadow: 2px 1px  0px RGB(255,255,255);	text-shadow: 2px 1px  0px RGB(255,255,255);
+		}
+		.managecy .topmenu .mngmenulist .current{
+			border:1px solid #fff;
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,246,248,1)), color-stop(50%,rgba(216,225,231,1)), color-stop(51%,rgba(181,198,208,1)), color-stop(100%,rgba(224,239,249,1))); /* Chrome,Safari4+ */	
+		}
+		
+		
+		.managecy .lock{
+			position:absolute;width:42px;height:50px;background:url(../images/lock.png) left top no-repeat;right:0px;top:0px;
+			-webkit-transform:scale(0.8);}
+		
+		.managecy .nullmenu{text-align:center;font-size:25px;padding:50px;margin:0 auto;color:#fff;width:800px;height:900px;}
+		.managecy .mngproductlist{height:630px;border:0px solid #ccc;margin-top:30px;position:relative;overflow:hidden;}
+		.managecy .mngboxlist{position:absolute;width:100%;}/*想要滚动起来，然后又不会因为里面的子节点FLOAT之后高度无法计算(因为float之后高度为0),所以在外面同时加上clearfix*/
+		.managecy .mngboxlist .box{width:157px;height:176px;margin:3px 10px;border:0px solid #ccc;float:left;color:#fff;font-size:14px;}
+		.managecy .mngboxlist .box .locked{
+			position:absolute;border:1px solid red;height:106px;width:147px;background:url(../images/lock2.png) center center no-repeat rgba(0,0,0,0.4)}
+		.managecy .mngboxlist .box img{
+			width:147px;height:106px;border:1px solid #fff;background:#fff;margin-bottom:10px;display:block;
+			-webkit-box-shadow:  3px 3px 4px rgba(0,0,0,0.9);
+		}
+		.managecy .mngboxlist .box span{color:#fff;font-size:14px;display:block;}
+
+
+
+
+
+
+/*桌位管理*/
+.managetable{position:absolute;border:0px solid red;width:99%;height:99%}
+
+	.managetable .topmenu{margin:0 50px;height:45px;border:1px solid rgba(57,75,95,0.5);border-radius: 0px 0px 25px 25px;padding:5px;overflow:hidden;
+		position:relative;
+		-webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.7);
+		-moz-box-shadow:  0px 0px 4px rgba(0,0,0,0.7);
+		box-shadow:  0px 0px 4px rgba(0,0,0,0.7);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,0.5)), color-stop(100%,rgba(125,185,232,0))); /* Chrome,Safari4+ */
+		}
+	.managetable .topmenu .menuoverflow{height:50px;overflow:hidden;position:relative;border-radius: 0px 0px 25px 25px;}
+	.managetable .topmenu .mngtablemenulist{position:absolute;}
+	.managetable .topmenu .mngtablemenulist div{
+			float:left;width:150px;padding:5px;font-size:14px;border-right:1px solid #ccc;text-align:center;font-size:20px;color:#fff;margin:0 5px;border:1px solid RGB(186,147,84);color:#000;border-radius: 15px;
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(243,226,199,1)), color-stop(50%,rgba(193,158,103,1)), color-stop(51%,rgba(182,141,76,1)), color-stop(100%,rgba(233,212,179,1))); /* Chrome,Safari4+ */
+		-webkit-text-shadow: 2px 1px  0px RGB(255,255,255);	text-shadow: 2px 1px  0px RGB(255,255,255);
+		}
+	.managetable .topmenu .mngtablemenulist .current{
+		border:1px solid #fff;
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,246,248,1)), color-stop(50%,rgba(216,225,231,1)), color-stop(51%,rgba(181,198,208,1)), color-stop(100%,rgba(224,239,249,1))); /* Chrome,Safari4+ */	
+	}
+	.managetable .mngtablelist{height:630px;border:0px solid #ccc;margin-top:30px;position:relative;overflow:hidden;}
+	.managetable .mngtableboxlist{position:absolute;width:100%;}
+	.managetable .mngtableboxlist .box{width:157px;height:120px;margin:3px 10px;float:left;color:#fff;font-size:14px;overflow:hidden;}
+	.managetable .mngtableboxlist .box img{margin:0 auto;clear:both;display:block;margin-bottom:10px;width:110px;height:71px;}
+	.managetable .mngtableboxlist .box span{display:block;clear:both;text-align:center;font-size:20px}
+
+
+
+
+/*桌位信息面板*/
+
+@-webkit-keyframes tableshowlit{
+0% { -webkit-transform: translateX(50%); }
+60% { -webkit-transform: translateX(-5%); }
+80% { -webkit-transform: translateX(5%);}
+100% { -webkit-transform:translateX(0%); }
+}
+@-webkit-keyframes tablehidelit{
+0% { -webkit-transform: translateX(0%); }
+100% { -webkit-transform:translateX(50%); }
+}
+@-webkit-keyframes tableshowall{
+0% { -webkit-transform: translateX(70%); }	
+50% { -webkit-transform: translateX(80%); }
+100% { -webkit-transform:translateX(0%); }
+}
+
+.tableinfos{
+	z-index:100;
+	position:absolute;top:80px;width:890px;height:650px;border:3px solid #000;
+	border-radius: 25px 0px 0px 25px;	
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#cccccc), to(#cccccc), color-stop(.6,#FFFFFF));
+	box-shadow:  0px 0px 14px rgba(0,0,0,0.7);
+	-webkit-box-shadow:  0px 0px 14px rgba(0,0,0,0.7);
+	
+}
+	.tableinfosshowlit{
+		right:-630px;	
+		-webkit-animation:tableshowlit 0.5s ease-in-out ;
+	}
+	.tableinfoshidelit{
+		right:-900px;	
+		-webkit-animation:tablehidelit 0.5s ease-in-out ;
+	}
+	.tableinfosshowall{
+		right:-30px;	
+		-webkit-animation:tableshowall 0.5s ease-in-out ;
+	}
+	
+	
+	.tableinfos .close{border-radius: 0 10px 10px 0;-webkit-box-shadow:  3px 3px 14px rgba(0,0,0,0.7);
+	position:absolute;background:#000;margin-top:530px;color:#ccc;padding:10px;
+	font-family:Arial;font-size:15px}
+
+	.tableinfos .tbinfoleft{border:0px solid #fff;width:250px;height:520px;margin:25px 15px 15px 15px;float:left;}
+	.tableinfos .tbinfoleft .titles{border-radius: 15px 15px 0px 0px;padding:10px;text-align:center;font-size:20px;color:#fff;background:#000;
+	font-family:Arial;font-weight:bold;
+	}
+	.tableinfos .tbinfoleft .intros{
+		margin:0px;padding:10px;
+	}
+	.tableinfos .tbinfoleft .intros li{
+		font-family:Arial;font-weight:bold;font-size:15px;margin:5px 0;
+		-webkit-text-shadow: 2px 1px  0px RGB(255,255,255);	text-shadow: 2px 1px  0px RGB(255,255,255);
+	}
+	.tableinfos .tbinfoleft .intros #bakinfos{
+		height:110px;overflow:hidden;
+	}
+	
+
+	.tableinfos .tbinfoleft .tbinfomenu{}
+	
+	.tableinfos .tbinfoleft .tbinfomenu h1{
+		font-size:20px;border-top:1px solid #ccc;border-bottom:1px solid #FFF;margin:0 20px;	
+		-webkit-text-shadow: 2px 1px  0px RGB(255,255,255);	text-shadow: 2px 1px  0px RGB(255,255,255);
+	}
+	.tableinfos .tbinfoleft .tbinfomenu  h1 span{
+		padding:15px 0 15px 70px ;display:block;;	
+	}
+	
+	.tableinfos .tbinfoleft .tbinfomenu .active{
+		background:blue;	
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(99%,rgba(247,228,145,0.64)), color-stop(100%,rgba(247,228,145,0.65))); /* Chrome,Safari4+ */
+	}
+	.tableinfos .tbinfoleft .tbinfomenu .icon1{
+		background:url(../images/tbinfoicon.png) 10px 10px no-repeat; 	
+	}
+	.tableinfos .tbinfoleft .tbinfomenu .icon2{
+		background:url(../images/tbinfoicon.png) 10px -40px no-repeat; 	
+	}
+	.tableinfos .tbinfoleft .tbinfomenu .icon3{
+		background:url(../images/tbinfoicon.png) 10px -95px no-repeat; 	
+	}
+	.tableinfos .tbinfoleft .tbinfomenu .icon4{
+		background:url(../images/tbinfoicon.png) 10px -150px no-repeat; 	
+	}
+	.tableinfos .tbinfoleft .tbinfomenu .icon5{
+		background:url(../images/tbinfoicon.png) 10px -220px no-repeat; 	border-bottom:0px
+	}
+
+
+
+
+	/*桌位信息面板*/
+	.tableinfos .tbinforight{
+		border:1px solid #E8E8E8;float:left;width:570px;height:600px;margin-top:25px;
+		/*background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#cccccc));*/
+		background:url(../images/paper.jpg);
+		-webkit-box-shadow:0px 0px  1px RGB(255,255,255);
+	}
+
+
+	/*更换桌位面板*/
+	.tableinfos .tbinforight .switchtable{margin:60px 50px 0 50px;}
+	.tableinfos .tbinforight .switchtable div{clear:both;padding:20px;font-size:25px;border-bottom:1px dashed #ccc;margin:10px 0}
+	.tableinfos .tbinforight .switchtable div span{color:#000;-webkit-text-shadow: 2px 1px  0px RGB(255,255,255);	}
+	
+	.tableinfos .tbinforight .switchtable div font{color:#FF3300;	font-family:Arial}
+	.tableinfos .tbinforight .switchtable div select{font-size:22px;margin-right:10px;-webkit-text-shadow: 2px 1px  0px RGB(255,255,255);}
+	.tableinfos .tbinforight .switchtable div.btn{
+		padding:10px;font-size:25px;text-align:center;margin:0 auto;width:250px;color:#fff;margin-top:50px;
+		-webkit-transform:scale(1);	-webkit-transition: all 0.5s ease;
+		border-radius: 15px;	
+		text-shadow: 2px 1px  0px RGB(10,10,10);
+		-webkit-box-shadow:0px 0px 7px rgba(0,0,0,0.6);
+		border:none;
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(174,188,191,1)), color-stop(50%,rgba(110,119,116,1)), color-stop(51%,rgba(10,14,10,1)), color-stop(100%,rgba(10,8,9,1))); /* Chrome,Safari4+ */	
+	}
+	.tableinfos .tbinforight .switchtable div.active{
+		-webkit-transform:scale(1.3);	-webkit-transition: all 0.5s ease;
+	}
+	.tableinfos .tbinforight .switchtable #switchmsg{font-size:16px;border-top:1px dashed #ccc;margin:50px 0 0 0;text-shadow: 2px 1px  0px RGB(255,255,255);	font-family:Arial}
+	
+	
+	
+	/*菜单修改面板*/
+	
+	.tableinfos .tbinforight .menuedittable{
+		margin:10px;
+	}
+		.tableinfos .tbinforight .menuedittable .menuscrolldiv{
+			height:500px;overflow:hidden;	
+		}
+		.tableinfos .tbinforight .menuedittable .totalprice{font-size:25px;font-family:Arial;color:#FF3300;border-bottom:1px dashed #ccc;text-shadow: 2px 1px  0px RGB(255,255,255);text-align:right;}
+		.tableinfos .tbinforight .menuedittable .totalprice{font-family:Arial;}
+		.tableinfos .tbinforight .menuedittable .box{display:-webkit-box;	-webkit-box-orient:horizontal;	border-bottom:1px dashed #ccc;text-shadow: 2px 1px  0px RGB(255,255,255);font-family:Arial	}
+		
+		.tableinfos .tbinforight .menuedittable .box em{display:block;float:left;margin:5px 5px;background:yellow;Font-style:normal;border-radius:5px;padding:5px 6px;}
+		.tableinfos .tbinforight .menuedittable .box i{width:30px;padding:5px 0 5px 0;display:block;float:left;margin:5px 10px;border-radius:5px; font-style:normal;text-align:center;background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#e6f0a3), color-stop(37%,#d2e638), color-stop(66%,#c3d825), color-stop(100%,#dbf043)); /* Chrome,Safari4+ */}
+
+		
+		.tableinfos .tbinforight .menuedittable .box.line{padding:10px;background:rgba(255,255,255,0.7)}
+		.tableinfos .tbinforight .menuedittable .fix{-webkit-box-flex: 1;	-moz-box-flex: 1;}
+		.tableinfos .tbinforight .menuedittable .box div{font-size:17px;text-align:center;padding:10px 0}
+		.tableinfos .tbinforight .menuedittable .box div:nth-child(1){width:40px;}
+		.tableinfos .tbinforight .menuedittable .box div:nth-child(2){width:50px;}
+		.tableinfos .tbinforight .menuedittable .box div:nth-child(3){-webkit-box-flex: 1;	-moz-box-flex: 1;text-align:left;}
+		.tableinfos .tbinforight .menuedittable .box div:nth-child(3) span{font-size:14px}
+		.tableinfos .tbinforight .menuedittable .box div:nth-child(4){width:60px;font-size:20px;}
+		.tableinfos .tbinforight .menuedittable .box div:nth-child(6){width:100px;}
+		.tableinfos .tbinforight .menuedittable .box div:nth-child(6) span{display:block;padding:5px;width:20px;height:25PX;float:left;margin:0 5px;position:absolute;           
+                        font-family:arial;font-size:20px;font-weight:bold;border:1px solid #D9E0E5;
+                        -webkit-box-shadow:0px 0px 5px rgba(0,0,0,0.3);
+                        border-radius:5px;
+                        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(246,248,249,1)), color-stop(50%,rgba(229,235,238,1)), color-stop(51%,rgba(215,222,227,1)), color-stop(100%,rgba(245,247,249,1))); /* Chrome,Safari4+ */
+		}
+		.tableinfos .tbinforight .menuedittable .box div:nth-child(6) span:nth-child(2){margin-left:50px;}
+		.tableinfos .tbinforight .menuedittable .box div:nth-child(6) span.over{
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,183,107,1)), color-stop(50%,rgba(255,167,61,1)), color-stop(51%,rgba(255,124,0,1)), color-stop(100%,rgba(255,127,4,1))); /* Chrome,Safari4+ */
+		}
+		.tableinfos .tbinforight .menuedittable  .updatebtn{
+			float:left;padding:5px 20px;border-radius:10px;font-size:16px;
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,234,187,1)), color-stop(50%,rgba(252,205,77,1)), color-stop(51%,rgba(248,181,0,1)), color-stop(100%,rgba(251,223,147,1))); /* Chrome,Safari4+ */
+			}
+
+		.tableinfos .tbinforight .menuedittable .bakinfo{margin-top:10px;color:#333;font-size:13px;font-family:"Arial"}
+
+
+    .inputprice{-webkit-user-select:text;width:100px;height:30px;overflow:auto;font-size:20px;font-family: "Arial";}
+    .inputbakinfo{-webkit-user-select:text;width:300px;height:60px;overflow:auto;font-size:20px;margin-bottom:20px;font-family: "Arial";}
+
+

@@ -1,0 +1,513 @@
+html {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px;
+	font-family:"Microsoft YaHei","Arial"
+}
+body {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+div {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+span {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+applet {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+object {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+iframe {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+h1 {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+h2 {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+h3 {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+h4 {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+h5 {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+h6 {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+p {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+blockquote {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+pre {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+a {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+abbr {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+acronym {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+address {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+big {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+cite {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+code {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+del {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+dfn {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+em {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+img {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+ins {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+kbd {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+q {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+s {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+samp {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+small {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+strike {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+strong {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+sub {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+sup {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+tt {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+var {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+b {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+u {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+i {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+center {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+dl {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+dt {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+dd {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+ol {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+ul {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+li {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+fieldset {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+form {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+label {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+legend {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+table {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+caption {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+tbody {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+tfoot {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+thead {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+tr {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+th {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+td {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+article {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+aside {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+canvas {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+details {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+embed {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+figure {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+figcaption {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+footer {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+header {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+hgroup {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+menu {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+nav {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+output {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+ruby {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+section {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+summary {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+time {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+mark {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+audio {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+video {
+	border-bottom: 0px; border-left: 0px; padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; font: inherit; vertical-align: baseline; border-top: 0px; border-right: 0px; padding-top: 0px
+}
+article {
+	display: block
+}
+aside {
+	display: block
+}
+details {
+	display: block
+}
+figcaption {
+	display: block
+}
+figure {
+	display: block
+}
+footer {
+	display: block
+}
+header {
+	display: block
+}
+hgroup {
+	display: block
+}
+menu {
+	display: block
+}
+nav {
+	display: block
+}
+section {
+	display: block
+}
+body {
+	line-height: 1
+}
+ol {
+	list-style-type: none; list-style-image: none
+}
+ul {
+	list-style-type: none; list-style-image: none
+}
+blockquote {
+	quotes: none
+}
+q {
+	quotes: none
+}
+blockquote:before {
+	content: none
+}
+blockquote:after {
+	content: none
+}
+q:before {
+	content: none
+}
+q:after {
+	content: none
+}
+table {
+	border-spacing: 0; border-collapse: collapse
+}
+p {
+	margin: 0px 0px 10px
+}
+strong {
+	font-weight: 700
+}
+body {
+	line-height: 18px; font-family: helvetica, arial, sans-serif; background: url(gradient_top.png) #fff no-repeat center 50px; color: #3d3d3d; font-size: 12px
+}
+#top {
+	z-index: 20; position: absolute; width: 100%; background: url(top_line.png) repeat-x 0px 0px; height: 54px; top: 0px; left: 0px
+}
+#top_wp {
+	margin: auto; width: 960px
+}
+#top_wp img {
+	margin-top: 10px;float: left; 
+}
+#top_wp h3 {
+	margin-top: 16px; float: right; color: #fff; font-size: 22px; text-shadow: 2px 2px 2px #000
+}
+#top_wp h3 span {
+	color: #989898;
+	font-family:"Microsoft YaHei","Arial"
+}
+.timer_box_main {
+	padding-bottom: 8px; padding-left: 40px; padding-right: 10px; margin-bottom: 45px; background: url(clock.png) #f2f2f2 no-repeat 8px center; color: #c11f73; font-size: 13px; font-weight: bold; padding-top: 9px; -moz-border-radius: 5px; border-radius: 5px
+}
+.timer_box_main span {
+	color: #111
+}
+.main_image {
+	position: relative; width: 480px; float: left; height: 515px
+}
+.product_info {
+	width: 370px; float: right; padding-top: 50px
+}
+.product_info ul li{margin-bottom:10px;line-height:20px}
+.contentdiv_2 {
+	margin: auto; width: 960px
+}
+#slider_wp {
+	position: relative; margin: 50px auto auto; width: 960px; height: 444px; padding-top: 80px
+}
+#line {
+	z-index: 10; position: absolute; width: 100%; background: url(line_black.png) repeat-x; height: 26px; top: 565px; left: 0px
+}
+#content_1 {
+	padding-bottom: 0px; margin: auto; padding-left: 0px; width: 960px; padding-right: 0px; padding-top: 20px
+}
+#content_1 h2 {
+	text-align: center; padding-bottom: 30px; text-transform: uppercase; display: block; margin-bottom: 40px; background: url(line.png) no-repeat center bottom; color: #111; font-size: 36px; padding-top: 19px
+}
+.one_col {
+	width: 292px; margin-bottom: 45px; float: left;margin-right:10px
+}
+.last.one_col {
+	margin-bottom: 45px; margin-right: 0px
+}
+.price {
+	position: relative; margin-top: 15px; display: block; font-family:"Microsoft YaHei","Arial"; color: #c11f73; font-size: 30px
+}
+.price em {
+	font-style: normal; font-size: 15px
+}
+.one_col h3 {
+	margin: 7px 0px 10px; font-family:"Microsoft YaHei","Arial"; color: #111; font-size: 25px
+}
+.price strong {
+	position: absolute; padding-bottom: 1px; padding-left: 8px; padding-right: 8px; font-family:"Microsoft YaHei","Arial"; background: #c11f73; color: #fff; margin-left: 15px; font-size: 12px; top: 0px; font-weight: normal; padding-top: 1px; -moz-border-radius: 4px; border-radius: 4px
+}
+.timer_box {
+	padding-bottom: 3px; padding-left: 35px; padding-right: 10px; margin-bottom: 30px; background: url(lock.png) no-repeat left center; color: #c11f73; font-weight: bold; padding-top: 4px
+}
+.timer_box span {
+	color: #111
+}
+.two_col {
+	width: 610px; float: left; margin-right: 35px
+}
+.banner {
+	margin-bottom: 35px
+}
+#content_2 {
+	width: 100%; 
+}
+#content_wp {
+	padding-bottom: 0px; margin: auto; padding-left: 0px; width: 960px; padding-right: 0px; padding-top: 45px
+}
+#form_bg {
+	position: relative; margin: auto auto 35px; width: 290px; background: url(bg_form.png) no-repeat left top; height: 35px
+}
+#form_bg input {
+	border-bottom: medium none; position: absolute; border-left: medium none; padding-bottom: 7px; padding-left: 7px; width: 200px; padding-right: 7px; display: block; background: none transparent scroll repeat 0% 0%; color: #c4c4c4; font-size: 12px; border-top: medium none; top: 3px; font-weight: bold; border-right: medium none; padding-top: 7px; left: 3px
+}
+.send_bt {
+	border-bottom: medium none; position: absolute; border-left: medium none; text-indent: -9999px; width: 79px; display: block; background: url(subscribe_bt.png) no-repeat left top; height: 28px; border-top: medium none; top: 4px; cursor: pointer; border-right: medium none; left: 207px
+}
+.success {
+	color: #6c0; font-weight: bold
+}
+.error {
+	position: absolute; padding-bottom: 2px; margin: 0px 0px 10px; padding-left: 5px; width: 110px; padding-right: 5px; color: #c03; font-size: 11px; top: 38px; font-weight: 700; padding-top: 2px; left: 0px
+}
+h1 {
+	font-family:"Microsoft YaHei","Arial"
+}
+h2 {
+	font-family:"Microsoft YaHei","Arial"
+}
+h3 {
+	font-family:"Microsoft YaHei","Arial"
+}
+h4 {
+	font-family:"Microsoft YaHei","Arial"
+}
+h5 {
+	font-family:"Microsoft YaHei","Arial"
+}
+h4 {
+	margin-bottom: 10px; font-size: 22px; text-shadow: 2px 2px 2px #fff
+}
+h5 {
+	margin-bottom: 5px; font-size: 18px; text-shadow: 2px 2px 2px #fff
+}
+.product_info h2 {
+	margin-bottom: 15px; color: #c11f73; font-size: 30px; text-shadow: 2px 2px 2px #fff
+}
+.product_info h2 span {
+	color: #8e8e8e; margin-left: 15px; font-size: 24px; text-decoration: line-through; text-shadow: 2px 2px 2px #fff
+}
+.product_info h3 {
+	font-family:"Microsoft YaHei","Arial"; margin-bottom: 25px; color: #111; font-size: 42px; text-shadow: 2px 2px 2px #fff
+}
+.product_info p {
+	margin-bottom: 20px; font-size: 14px
+}
+.phone {
+	margin-top: 30px; display: block; color: #c11f73; font-size: 24px; font-weight: 700; text-shadow: 2px 2px 2px #fff
+}
+.cards {
+	margin: 15px 0px 0px
+}
+.shipping {
+	margin: 15px 0px 0px
+}
+.clr {
+	clear: both
+}
+a:link {
+	color: #2e96bd; text-decoration: none
+}
+a:visited {
+	color: #2e96bd; text-decoration: none
+}
+a:hover {
+	color: #2e96bd; text-decoration: underline
+}
+.badge_1 {
+	position: absolute; text-align: center; width: 103px; font-family:"Microsoft YaHei","Arial"; background: url(badge_1.png) no-repeat; height: 63px; color: #fff; font-size: 30px; top: 280px; padding-top: 40px; left: 280px; text-shadow: 2px 2px 2px #6d245f
+}
+ul.list {
+	padding-bottom: 0px; margin: 15px 0px 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px
+}
+ul.list_ok {
+	padding-bottom: 0px; margin: 15px 0px 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px
+}
+ul.list li {
+	padding-bottom: 0px; margin: 3px 0px 0px; padding-left: 20px; padding-right: 0px; background: url(bullet.png) no-repeat 3px 5px; padding-top: 0px
+}
+ul.list_ok li {
+	padding-bottom: 0px; margin: 3px 0px 0px; padding-left: 20px; padding-right: 0px; background: url(tick.png) no-repeat left 3px; padding-top: 0px
+}
+a.details:link {
+	text-indent: -9999px; width: 82px; display: block; background: url(info_blue.png) no-repeat; height: 32px
+}
+a.details:visited {
+	text-indent: -9999px; width: 82px; display: block; background: url(info_blue.png) no-repeat; height: 32px
+}
+a.buy:link {
+	text-indent: -99999px; width: 141px; display: block; background: url(../images/buy_bt.png) no-repeat; height: 40px
+}
+a.buy:visited {
+	text-indent: -99999px; width: 141px; display: block; background: url(../images/buy_bt.png) no-repeat; height: 40px
+}
+a.buy:hover {
+	text-indent: -99999px; width: 141px; display: block; background: url(../images/buy_bt_hover.png) no-repeat; height: 40px
+}
+#footer {
+	width: 100%; background: #fff
+}
+#footer_wp {
+	margin: 15px auto; width: 960px
+}
+#footer_wp ul {
+	width: 625px; display: block; float: left
+}
+#footer_wp ul li {
+	padding-right: 12px; background: url(menu_footer_divider.png) no-repeat right center; float: left
+}
+#footer_wp ul li.last {
+	background: none transparent scroll repeat 0% 0%
+}
+#footer_wp p {
+	text-align: right; width: 180px; float: right
+}

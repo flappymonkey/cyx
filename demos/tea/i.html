@@ -1,0 +1,254 @@
+﻿<!DOCTYPE HTML>
+<html manifest="cache.manifest">
+<head>
+<title>茶楼餐饮秀点餐</title>
+<link rel="apple-touch-icon" href="icon.png"/>  
+<link rel="apple-touch-startup-image"  media="screen and (orientation: landscape)"   href="theme/tmqd/wall/startup.png"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" /> 
+<meta name="apple-mobile-web-app-capable" content="yes" /> 
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link href="csi/css/css.css" rel="stylesheet" type="text/css"/>
+<script src="data/total.js"></script>
+<script>
+    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+</script>
+<style>
+body{
+	background:url(theme/tmqd/wall/wallpaper.png) left -20px no-repeat;
+	
+	
+}
+.loadpos{
+	left:360px;top:550px;border:0px solid #ccc;width:350px;height:50px;position:absolute;z-index:0;
+}
+.pernumber{
+	padding-top:20px
+	font-family:Arial, Helvetica, sans-serif;font-size:35px;color:#fff;text-align:center;
+	-webkit-text-shadow: 0px 0px  7px rgb(255,204,0);text-shadow: 0px 0px 7px rgb(255,204,0);
+	-webkit-animation:delorderani 0.5s infinite;
+}
+.loadbg{
+		clear:both;
+		width:327px;padding:2px;height:20px;margin-bottom:20px;
+		background:-webkit-gradient(linear, left top, left bottom, from(#27130E), to(#4B2E27));
+		border:3px solid rgba(102,22,4,1);
+		-moz-border-radius: 30px ;   
+		-webkit-border-radius:30px;   
+		border-radius:30px;
+		
+		-webkit-box-shadow: 0px 0px 8px rgba(255,210,0,0.7);
+		-moz-box-shadow:  0px 0px 8px rgba(255,210,0,0.7);
+		box-shadow:  0px 0px 8px  rgba(255,210,0,0.7);
+}
+.loadbg2{
+		clear:both;
+		padding:3px;height:15px;overflow:hidden;
+		background:-webkit-gradient(linear, left top, left bottom, from(#B41E15),  to(#510201));
+		-moz-border-radius: 30px ;   
+		-webkit-border-radius:30px;   
+		border-radius:30px;
+}
+
+@-webkit-keyframes loadshake {
+ 0% {-webkit-transform:translate(-2px,0px) ;}
+ 50% { -webkit-transform: translate(0px,0px); }
+100% { -webkit-transform: translate(-2px,0px); }
+}
+@-webkit-keyframes fuckapple {
+ 0% {width:0px;}
+100% { width:320px; }
+}
+.loadbg3{
+		width:0px;/*320px*/
+		background:-webkit-gradient(linear, left top, left bottom, from(#FFFED3),  to(#FFFC25));
+		-moz-border-radius: 30px ;   
+		-webkit-border-radius:30px;   
+		border-radius:30px;
+		-webkit-animation:loadshake 0.2s infinite;
+	
+}
+@-webkit-keyframes loaderallfade {
+ 0% {-webkit-transform: scale(1)  rotatey(0deg) ;}
+100% { -webkit-transform: scale(0)  rotatey(360deg); }
+}
+
+@-webkit-keyframes notscale {
+		 0% {-webkit-transform: scale(1); }
+		100% { -webkit-transform: scale(1) ;}
+	}
+.offline
+{   right:20px;bottom:20px;text-align:center;padding:5px 40px;font-size:17px;border:1px solid RGBa(163,178,56,0.5);
+    -moz-border-radius: 10px ;   
+    -webkit-border-radius:10px;   
+    border-radius:10px;
+    color:#000;
+    position:absolute;
+   
+}
+.offlinea{background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(230,240,163,0.3)), color-stop(50%,rgba(210,230,56,0.6)), color-stop(51%,rgba(195,216,37,0.6)), color-stop(100%,rgba(219,240,67,0.3))); /* Chrome,Safari4+ */    }
+.offlineb{background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(230,240,163,1)), color-stop(50%,rgba(210,230,56,1)), color-stop(51%,rgba(195,216,37,1)), color-stop(100%,rgba(219,240,67,1))); /* Chrome,Safari4+ */    }
+
+#tips{
+    display: none;
+    position:absolute;
+    left:16px;
+    top:0px;
+}
+</style>
+</head>
+
+<body >
+<div class="offline offlinea" id="offline" style="display:noned">离线使用</div>
+<div onclick="location.reload()" style="height:100px;"></div>
+
+<div style='height:200px;width:200px;margin:100px 0 0 400px;border:0px solid red;margin:50' onclick="gourl()"></div>
+
+
+
+
+<div class="loadpos" id="loadboard">
+	
+    <div class="loadbg"  id="loading" style="display:none;">
+    	<div class="loadbg2">
+        	<div class="loadbg3" id="bar">&nbsp;</div>
+        </div>
+    </div>
+    <div class="pernumber" id="pernum"></div>
+
+</div>
+
+
+<div class="roat"></div>
+
+<div id="tips">
+<img src="../tips.png" />
+</div>
+
+<script>
+
+
+
+
+    var i = 0;
+    var online = false;
+    var cacheStatusValues = [];
+    cacheStatusValues[0] = 'uncached';
+    cacheStatusValues[1] = 'idle';
+    cacheStatusValues[2] = 'checking';
+    cacheStatusValues[3] = 'downloading';
+    cacheStatusValues[4] = 'updateready';
+    cacheStatusValues[5] = 'obsolete';
+
+    var cache = window.applicationCache;
+    cache.addEventListener('cached', logEvent, false);
+    cache.addEventListener('checking', logEvent, false);
+    cache.addEventListener('downloading', logEvent, false);
+    cache.addEventListener('error', logEvent, false);
+    cache.addEventListener('noupdate', logEvent, false);
+    cache.addEventListener('obsolete', logEvent, false);
+    cache.addEventListener('progress', logEvent, false);
+    cache.addEventListener('updateready', logEvent, false);
+
+
+    function log(s) { console.log(s); }
+
+    function $(el) { return document.getElementById(el) }
+    function sethtml(str) { $("pernum").innerHTML = str; }
+    i = 0;
+    function logEvent(e) {
+        var lbrwidth = 320;
+        if (e.type == "noupdate" && cacheStatusValues[cache.status] == "idle") {
+            sethtml("<b style='font-size:12px'>无需更新，直接进入.</b>");
+            gourl();
+        }
+        if (e.type == "downloading") {
+            $("loading").style.display = ""; 
+        }
+        if (e.type == "cached") {
+            gourl();
+        }
+        if (e.type == "progress") {
+
+           
+            if (totalmanifest) {
+                var _p = i / totalmanifest;
+                var _pp = Math.floor(_p * 100) + "%";
+                var _w = Math.floor(lbrwidth * _p);
+                $("bar").style.width = _w + "px";
+                sethtml(_pp);
+            } else {
+                $("bar").style.webkitAnimation = "fuckapple 5s infinite";
+                sethtml("正在更新.请稍候!..."); 
+            }
+
+            i++;
+        }
+        if (e.type == "error") {
+            if (!isOnline()) {
+                online = false;
+                sethtml("<b style='font-size:14px'>您未联上网络，请离线使用</b>"); 
+            } else {
+                sethtml("<b style='font-size:14px'>装载资源错误，请与我们取得联系</b>"); 
+            }
+            $("pernum").style.webkitAnimation = "notscale 1s";
+        }
+        if (e.type == "updateready") {
+
+            sethtml("更新成功");
+            setTimeout(goon, 1000);
+            function goon() {
+                $("loadboard").style.webkitAnimation = "loaderallfade 0.3s";
+                setTimeout(function () { $("loadboard").style.display = "none"; }, 300)
+            }
+            try {
+                cache.swapCache();
+            } catch (ex) { }
+            gourl();
+
+        }
+        if (e.type == "checking") {
+            sethtml("<b style='font-size:14px'>请稍候，连线检查更新中</b>"); 
+        }
+
+
+    }
+    function gourl() {
+        window.localStorage.removeItem("employee");
+        if (online) {
+            window.localStorage.removeItem("offline");
+        } else {
+            window.localStorage.setItem("offline", "true");
+        }
+        location.href = 'manage.html';
+    }
+
+    function isOnline() {
+        return navigator.onLine;
+    }
+
+    var dom = document.querySelector("#offline");
+    dom.addEventListener('touchstart', function (e) {
+        this.className = "offline offlineb";
+    }, false);
+
+    dom.addEventListener('touchend', function (e) {
+        this.className = "offline offlinea";
+    }, false);
+
+    dom.addEventListener('click', function (e) {
+        online = false;
+        gourl();
+    }, false);
+
+	// var storage = window.localStorage;
+	// var value = storage.getItem("tips3");
+	// if(value == "off"){
+	// 		document.getElementById("tips").style.display="none";
+	// }else{
+	// 	storage.setItem("tips3","off");	
+	// }
+</script>
+</body>
+</html>

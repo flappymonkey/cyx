@@ -1,0 +1,192 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <title></title>
+    <link rel="apple-touch-icon" href="icon.png" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <script src="csi/scripts/jquery.js"></script>
+    <script src="data/menudatab.js"></script>
+    <script src="csi/scripts/il.js"></script>
+    <script src="csi/scripts/md5.js"></script>
+    <script src="csi/scripts/common.js"></script>
+    <link href="csi/css/manage.css" rel="stylesheet" type="text/css">
+    <link href="csi/css/common.css" rel="stylesheet" type="text/css">
+<link href="csi/css/buttons.css" rel="stylesheet" type="text/css">
+    <script>
+
+        var mngmenuScroll = null, prolistScroll = null, tablemenuScroll = null, tablelistScroll = null, menueditScroll = null;
+        var menudatas = MenuJson;
+    </script>
+</head>
+<body class="body_manage" id="manage">
+    <div class="bodycont clearfix">
+        <div class="menuleft" id="menuleft">
+            <div class="menu current " id="mngidx">
+                <div class="menu1">
+                    <span>管理首页</span></div>
+            </div>
+            <div class="menu  " id="mngcy">
+                <div class="menu2">
+                    <span>菜肴管理</span></div>
+            </div>
+            <div class="menu " id="mngtable">
+                <div class="menu3">
+                    <span>桌位管理</span></div>
+            </div>
+            <b onclick="location.reload();">&nbsp;&nbsp;&nbsp;</b>
+        </div>
+        <div class="contright fix" id="contright">
+        </div>
+    </div>
+    <!--管理首页模板-->
+    <textarea id="manageindextemplate" style="display: none">
+<div id="manageindex" class="manageindex contmovein">
+    <div class="l1"></div>
+    <div class="l2"></div>
+    <div class="l3"></div>
+    <div class="l4"></div>
+    <div class="icon" onClick="location.reload();"></div>
+    <div class="gomenubg">
+    	<br><br><br><br><div class="goinclick goinclicka" id="goinclick" url="main2.html">欢迎进入点菜系统</div>
+    </div>
+</div>
+</textarea>
+    <!--菜肴管理模板-->
+    <textarea id="managecytemplate" style="display: none">
+<div id="managecy" class="managecy contmovein">
+            <div class="topmenu">
+                <div class="menuoverflow" id="mngmenu">
+                    <div class="mngmenulist" id="mngmenulist">
+                    </div>
+                </div>
+            </div>
+            <div class="lock" id="menulock"></div>
+           
+           	<div class="mngproductlist" id="mngproductlist">
+            	<div class="mngboxlist clearfix" id="mngboxlist">
+            			
+                       
+            	</div>
+            </div>
+           
+           
+            
+</div>
+</textarea>
+    <!--菜肴格模板-->
+    <textarea id="prolistboxtemplate" style="display: none">
+<div class="box" id="mngbox{id}"><img src='{pictype1}'/><span>{title}</span>价格:{price}</div>
+</textarea>
+    <!--桌位管理模板-->
+    <textarea id="managetabletemplate" style="display: none">
+    <div id="managetable" class="managetable contmovein">
+                <div class="topmenu">
+                    <div class="menuoverflow" id="mngtablemenu">
+                        <div class="mngtablemenulist" id="mngtablemenulist">
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="mngtablelist" id="mngtablelist">
+                    <div class="mngtableboxlist clearfix" id="mngtableboxlist">
+                            
+                           
+                    </div>
+                </div>
+    </div>
+</textarea>
+    <!--桌子格模板-->
+    <textarea id="tablelistboxtemplate" style="display: none">
+
+<div class="box" id="tablebox{id}" typea='{typeaidx}' typeb='{typebidx}'><img src='{pictype}'/><span>{title}</span></div>
+
+</textarea>
+    <!--桌位信息模板-->
+    <textarea id="tableinfotemplate" style="display: none">
+
+	<div class="tableinfos tableinfosshowlit" id="tableinfos">
+    	<div class="close" id="closeit">X</div>
+        <div class="tbinfoleft" id="tbinfoleft">
+        	<div class="titles" id="titles">第1桌情况</div>
+            <ul class="intros">
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;就餐时间： <span id="dintime"></span></li>
+            <li>已用餐时间：<span id="dintotaltime"></span></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;就餐人数：<span id="dinpsnum"></span>人</li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;帐单金额：<span id="dinmoney"></span>元</li>
+            <li style="font-size:12px" id="bakinfos"></li>
+            </ul>
+            <div class="tbinfomenu" id="tbinfomenu">
+                    <h1 class="icon1"><span>菜单修改</span></h1>
+                    <h1 class="icon2 "><span>结帐买单</span></h1>
+                    <h1 class="icon3"><span>点菜清单</span></h1>
+                    <h1 class="icon4"><span>申请换桌</span></h1>
+                    <h1 class="icon5"><span>历史信息</span></h1>
+            </div>
+        	
+        </div>
+         
+        <div class="tbinforight"  id="tbinforight"></div>
+    </div>
+</textarea>
+    <!--更换桌位模板-->
+    <textarea id="tableswitchtemplate" style="display: none">
+        <div class="switchtable" id="switchtable">
+            <div id="switchnowtable"><span>现在桌位：</span></div>
+            <div id="siwtchto"><span>将更换至：</span><br><select id="tabletypea"></select><select id="tabletypeb"></select></div>
+            <div id="switchsub" class="btn">确认换桌</div>
+            <div id="switchmsg"></div>
+        </div>
+</textarea>
+    <!--菜单修改-->
+    <textarea id="menuedittemplate" style="display: none">
+
+     <div class="menuedittable" id="menuedittable">
+     		<div class="box">
+            	<div>序号</div>
+                <div>分类</div>
+                <div style='text-align:center'>菜名</div>
+                <div>份数</div>
+                <div>操作</div>
+            </div>
+            <div class="totalprice" >共计：<span id="totalprice" ></span>元</div>
+            
+            <div id="menuscrolldiv" class="menuscrolldiv">
+            	<div>
+            	</div>
+            </div>
+            
+            
+            
+     </div>
+</textarea>
+    <textarea id="menueditboxtemplate" style="display: none">
+
+	<div class="box" proid="{proid}">
+            	<div>{id}</div>
+                <div>{type}</div>
+                <div>{title}<br><span class="editprice">{price}</span>元/{unit}  <span class="realunits" datas="{unit2num}">{realunits}</span>  小计：<b class="xj">{stotal}</b>元<br>{bak}</div>
+                <div class="editnum">{num}</div> <div class="unit2">{unit2}</div>
+                <div class="addcut"><span class="cut">-</span>  <span class="add">+</span></div>
+            </div>
+</textarea>
+    <textarea id="loginformtemplate" style='display: none'>
+  	<div class="loginform" id="loginform">
+    	
+    		<div class="loginboard" id="logincont">
+            		<div id="loginboard">
+            		<div class="logintitle">请服务员登录确认</div>
+            		<div class="loginname"><input type="number" id="logname" value="" name="logname" /></div>
+                    <div class="loginpass"><input type="password" id="logpass" value="" name="logpass" /></div>
+                    <div class="loginsub" id="loginsub">确 认</div>
+                    <div class="logincancel" id="logincancel">取消</div>
+                    </div>
+            
+            </div>
+           
+    </div>
+</textarea>
+</body>
+</html>
